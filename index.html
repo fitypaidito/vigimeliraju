@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por la Dignidad del Vigilante de Seguridad y sus Derechos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #f0c200;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f0c200;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        header img {
+            width: 80px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        nav {
+            background-color: #333;
+            color: #f0c200;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #f0c200;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar {
+            background-color: #111;
+            padding: 15px;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        footer {
+            background-color: #000;
+            color: #f0c200;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer .author {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        footer .purpose {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #f0c200;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        form {
+            background-color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .content-section {
+            margin-bottom: 20px;
+        }
+        .content-section h2 {
+            color: #f0c200;
+            border-bottom: 2px solid #f0c200;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Por la Dignidad del Vigilante de Seguridad y sus Derechos</h1>
+        <img src="escudo.png" alt="Escudo">
+    </header>
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#articles">Artículos</a>
+        <a href="#videos">Videos</a>
+        <a href="#documents">Documentos</a>
+        <a href="#photos">Fotos</a>
+        <a href="#forum">Foro</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Opciones</h2>
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#articles">Artículos</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#documents">Documentos</a></li>
+                <li><a href="#photos">Fotos</a></li>
+                <li><a href="#forum">Foro</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="about" class="content-section">
+                <h2>Sobre Nosotros</h2>
+                <p>El sector de la seguridad privada es una pieza fundamental en la protección y seguridad de nuestra sociedad. Los vigilantes de seguridad desempeñan un rol crucial en mantener la paz, prevenir delitos y asegurar el bienestar de las personas y propiedades. Esta página está dedicada a destacar la labor de estos profesionales y dignificar su trabajo incansable.</p>
+            </section>
+            <section id="articles" class="content-section">
+                <h2>Artículos</h2>
+                <div class="article">
+                    <h3>El Valor de los Vigilantes de Seguridad en Tiempos Modernos</h3>
+                    <p>En un mundo cada vez más incierto, los vigilantes de seguridad se han convertido en un bastión de tranquilidad. Su presencia en centros comerciales, hospitales, eventos y más, no solo disuade a potenciales delincuentes sino que también ofrece una sensación de seguridad a la comunidad. [Leer más](#)</p>
+                </div>
+                <div class="article">
+                    <h3>Historias de Coraje: Vigilantes en Acción</h3>
+                    <p>Cada día, miles de vigilantes de seguridad enfrentan situaciones que ponen a prueba su valentía y compromiso. Desde intervenir en robos hasta ayudar en emergencias médicas, estos profesionales son verdaderos héroes modernos. [Leer más](#)</p>
+                </div>
+            </section>
+            <section id="videos" class="content-section">
+                <h2>Videos</h2>
+                <form id="video-form">
+                    <label for="video-url">URL del Video (YouTube):</label>
+                    <input type="text" id="video-url" name="video-url" required>
+                    <button type="submit">Subir Video</button>
+                </form>
+                <div class="video-container" id="video-container">
+                    <!-- Los videos se añadirán aquí -->
+                </div>
+            </section>
+            <section id="documents" class="content-section">
+                <h2>Documentos</h2>
+                <form id="document-form">
+                    <label for="document-file">Seleccionar Documento:</label>
+                    <input type="file" id="document-file" name="document-file" accept=".pdf,.doc,.docx" required>
+                    <button type="submit">Subir Documento</button>
+                </form>
+                <div class="document-container" id="document-container">
+                    <!-- Los documentos se añadirán aquí -->
+                </div>
+            </section>
+            <section id="photos" class="content-section">
+                <h2>Fotos</h2>
+                <form id="photo-form">
+                    <label for="photo-file">Seleccionar Foto:</label>
+                    <input type="file" id="photo-file" name="photo-file" accept="image/*" required>
+                    <button type="submit">Subir Foto</button>
+                </form>
+                <div class="photo-container" id="photo-container">
+                    <!-- Las fotos se añadirán aquí -->
+                </div>
+            </section>
+            <section id="forum" class="content-section">
+                <h2>Foro</h2>
+                <form id="forum-form">
+                    <label for="forum-title">Título del Mensaje:</label>
+                    <input type="text" id="forum-title" name="forum-title" required>
+                    <label for="forum-content">Contenido del Mensaje:</label>
+                    <textarea id="forum-content" name="forum-content" rows="4" required></textarea>
+                    <button type="submit">Publicar Mensaje</button>
+                </form>
+                <div class="forum-container" id="forum-container">
+                    <!-- Los mensajes del foro se añadirán aquí -->
+                </div>
+            </section>
+            <section id="subscription" class="content-section">
+                <h2>Suscripción</h2>
+                <div class="subscription-form">
+                    <h3>Suscríbete a Nuestro Boletín</h3>
+                    <form id="subscription-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                        <input type="email" id="subscriber-email" name="subscriber-email" placeholder="Ingresa tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                    <p>Recibe las últimas noticias y actualizaciones sobre la seguridad privada.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p class="author">Creado por Fity</p>
+        <p class="purpose">Esta página fue creada con el propósito de dignificar el trabajo y la importancia de los vigilantes de seguridad. Cualquier modificación que altere este propósito original está prohibida.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script>
+        const cloudName = 'dluljeiul'; // Reemplaza 'dluljeiul' con tu nombre de cloud
+        const uploadPreset = 'ml_default'; // Usa el preset por defecto de Cloudinary
+
+        document.getElementById('photo-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const file = document.getElementById('photo-file').files[0];
+            const url = `https://api.cloudinary.com/v1_1/${cloudName}/upload`;
+
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('upload_preset', uploadPreset);
+
+            fetch(url, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const photoContainer = document.getElementById('photo-container');
+                const img = document.createElement('img');
+                img.src = data.secure_url;
+                img.classList.add('photo');
+                photoContainer.appendChild(img);
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('video-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const url = document.getElementById('video-url').value;
+            const videoContainer = document.getElementById('video-container');
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            iframe.allowFullscreen = true;
+            videoContainer.appendChild(iframe);
+            document.getElementById('video-url').value = '';
+        });
+
+        document.getElementById('document-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const file = document.getElementById('document-file').files[0];
+            const url = `https://api.cloudinary.com/v1_1/${cloudName}/upload`;
+
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('upload_preset', uploadPreset);
+
+            fetch(url, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const documentContainer = document.getElementById('document-container');
+                const link = document.createElement('a');
+                link.href = data.secure_url;
+                link.textContent = file.name;
+                link.target = "_blank";
+                documentContainer.appendChild(link);
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('forum-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const title = document.getElementById('forum-title').value;
+            const content = document.getElementById('forum-content').value;
+            const forumContainer = document.getElementById('forum-container');
+            const forumPost = document.createElement('div');
+            forumPost.classList.add('forum-post');
+            forumPost.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+            forumContainer.appendChild(forumPost);
+            document.getElementById('forum-title').value = '';
+            document.getElementById('forum-content').value = '';
+        });
+
+        document.getElementById('subscription-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('subscriber-email').value;
+            alert(`Gracias por suscribirte, ${email}!`);
+            document.getElementById('subscriber-email').value = '';
+        });
+    </script>
+</body>
+</html>
